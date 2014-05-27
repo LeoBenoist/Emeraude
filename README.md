@@ -29,10 +29,10 @@ If you want to write the html returner by your link somewhere. You could just us
 The switch action allow you to switch text, href, class after the ajax submission. In the folowing exemple we want a like that allow you to bookmark or unbookmark something. We want to modify the style by changing the class.
  
 	<a href="/linkTrue" class="bookmark"
-		data-tt-ajax='true'
-		data-tt-ajax-switch-class='unbookmark'
-		data-tt-ajax-switch-href='/linkFalse'
-		data-tt-ajax-switch-text="UnBookmark"
+		data-em-ajax='true'
+		data-em-ajax-switch-class='unbookmark'
+		data-em-ajax-switch-href='/linkFalse'
+		data-em-ajax-switch-text="UnBookmark"
 	>
 		Bookmark
 	</a>
