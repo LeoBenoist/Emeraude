@@ -105,20 +105,8 @@
         });
     }
 
-    Emeraude.textToLink = function (self) {
-        self.html(self.html());
-    }
-
-    Emeraude.textToLinkListener = function () {
-        $("p[data-em-parse-link='true']").each(function (i) {
-            var self = $(this);
-            Emeraude.textToLink(self);
-        });
-    }
-
     Emeraude.linkToListener();
     Emeraude.formToAjaxListener();
-    Emeraude.textToLinkListener();
 
     window.emeraude = Emeraude;
 })($, window);
