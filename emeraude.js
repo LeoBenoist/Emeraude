@@ -61,6 +61,19 @@
                 self.data('em-ajax-switch-text', old);
             }
 
+            if (self.data('em-ajax-active-class')) {
+                var datas = $('[data-em-return-destination="' + self.data('em-return-destination') + '"]');
+
+                datas.each(function () {
+                    var data = $(this);
+                    if (data.data('em-ajax-active-class')) {
+                        data.removeClass(data.data('em-ajax-active-class'));
+                    }
+                });
+
+                self.addClass(self.data('em-ajax-active-class'));
+            }
+
             if (self.data('em-ajax-switch-once') == true) {
                 self.unbind('click');
             }
