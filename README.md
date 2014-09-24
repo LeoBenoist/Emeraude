@@ -22,6 +22,10 @@ Congratulation ! Your form submission now trigger an ajax request.
 If you want to write the html returner by your link somewhere. You could just use :
 
 	<a data-em-return-destination='#jqueryselector' ...
+	
+When you have a return destination you could add a loading class to diplay some effect when loading.
+
+	<a data-em-ajax-loading-class='main-loading' data-em-return-destination='#jqueryselector' ...
 
 ### Link switch action
 
