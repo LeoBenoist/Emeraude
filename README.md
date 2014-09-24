@@ -46,6 +46,11 @@ If you want to disabled the link effect after switching the class for exemple yo
 
 	data-em-ajax-switch-once='true'
 	
+#### Active class
+If you want to add a selected class to the link :
+
+	data-em-ajax-active-class='active'
+	
 #### Remove the link after click
 
 	data-em-ajax-remove='true'
